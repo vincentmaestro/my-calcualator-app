@@ -5,7 +5,7 @@ document.querySelectorAll('button').forEach(button => {
         document.querySelector('.result').querySelector('input').value += e.target.value;
 
         if(button.className === 'clear') {
-            document.querySelector('.result').querySelector('span').textContent = "";
+            document.querySelector('.result').querySelector('span').textContent = "-";
             document.querySelector('.result').querySelector('input').value = "";
             if(!document.querySelector('.close-brackets').classList.contains('hb')) {
                 document.querySelector('.close-brackets').classList.add('hb');
@@ -38,7 +38,7 @@ document.querySelectorAll('button').forEach(button => {
 
         if(button.className === 'equals' && operator) {
             document.querySelector('.result').querySelector('span').textContent = operator;
-            document.querySelector('.result').querySelector('input').value = eval(operator);
+            document.querySelector('.result').querySelector('input').value = eval(operator).toLocaleString();
         }
 
     });

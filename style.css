@@ -31,7 +31,7 @@ body {
     text-align: right;
     padding: 8px 0;
     font-size: 22px;
-    padding-right: 8%;
+    padding-right: 9%;
 }
 
 .result input {
@@ -146,6 +146,12 @@ button:active {
         width: 70px;
         height: 70px;
     }
+    button:hover {
+        background-color: #e2d9d94d;
+    }
+    /* button:active {
+        background-color: transparent;
+    } */
     .clear {
         font-size: 30px;
     }
@@ -171,6 +177,9 @@ button:active {
 }
 
 @media screen and (max-width: 430px) {
+    .result span {
+        padding-right: 5%;
+    }
     #root {
         width: 94%;
     }
